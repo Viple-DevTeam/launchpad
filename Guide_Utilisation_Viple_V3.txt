@@ -1,0 +1,102 @@
+Créé par Viple SAS
+
+=== GUIDE D'UTILISATION - VIPLE LAUNCHPAD V3 ===
+Version sans barre de titre - Interface épurée
+
+NOUVEAUTÉS V3 :
+🎯 Widget SANS barre de titre (pas de boutons Windows par défaut)
+🎨 Interface épurée et moderne
+🖱️ Déplacement par glisser-déposer
+✕ Bouton fermer personnalisé (rouge)
+🔲 Bordure colorée pour délimiter la fenêtre
+📱 Look plus moderne type application mobile
+
+DESCRIPTION :
+Widget LaunchPad Viple avec interface épurée sans les éléments Windows traditionnels pour une expérience utilisateur plus fluide et moderne.
+
+CONTENU DU PACKAGE V3 :
+1. startup_welcome_v3.py - Application de bienvenue pour V3
+2. viple_launchpad_v3.py - Widget sans barre de titre
+3. create_viple_icon.py - Générateur d'icône Viple
+4. setup_viple_v3.py - Script d'installation V3
+5. requirements.txt - Dépendances Python
+
+INSTALLATION :
+
+1. Ouvrez une invite de commande en tant qu'administrateur
+2. Naviguez vers le dossier contenant les fichiers
+3. Exécutez : python setup_viple_v3.py
+
+FONCTIONNALITÉS V3 :
+
+INTERFACE SANS BARRE DE TITRE :
+- Aucun bouton Windows (fermer, réduire, agrandir)
+- Design épuré et moderne
+- Bordure bleue Viple pour délimiter la fenêtre
+- Bouton fermer personnalisé (✕ rouge) en haut à droite
+
+INTERACTION V3 :
+🖱️ Glisser-déposer : Cliquez n'importe où et glissez pour déplacer
+✕ Fermer : Cliquez sur le bouton rouge ✕ en haut à droite
+📍 Position : Se replace automatiquement en haut à droite
+⏰ Auto-masquage : Se cache après 2 secondes si focus perdu
+
+CONTRÔLES :
+- Logo Viple + titre : Zone de déplacement
+- Bouton ✕ rouge : Fermer/masquer le widget
+- 🆘 Obtenir de l'aide : https://aidenum.viplegroup.com
+- 🖥️ Lancer le Kiosk : C:\viplestart\lkiosk.exe
+- ⚙️ Lancer le Manager : C:\viplestart\lmanager.exe
+
+INDICATIONS VISUELLES :
+- "Glisser pour déplacer • ✕ pour fermer" affiché en bas
+- Curseur change au survol des boutons
+- Bordure colorée pour identification
+- Interface sans distractions
+
+ICÔNE SYSTÈME (inchangée) :
+- Icône Viple dans la barre système Windows
+- Clic simple : Afficher/masquer
+- Menu contextuel complet avec toutes les options
+
+AVANTAGES V3 :
+✅ Interface plus moderne et épurée
+✅ Pas de confusion avec les boutons Windows
+✅ Déplacement intuitif par glisser-déposer
+✅ Focus sur le contenu, pas sur les décorations
+✅ Look professionnel et minimaliste
+✅ Compatible avec tous les thèmes Windows
+
+MIGRATION DEPUIS V1/V2 :
+La V3 remplace automatiquement les versions précédentes.
+L'ancienne configuration est conservée.
+
+UTILISATION OPTIMALE :
+1. Le widget se positionne automatiquement en haut à droite
+2. Glissez-le où vous voulez le placer
+3. Il reste à cette position jusqu'au prochain redémarrage
+4. Utilisez l'icône système pour un accès rapide
+
+DÉPANNAGE V3 :
+
+Widget ne se déplace pas :
+- Cliquez et maintenez enfoncé, puis glissez
+- Évitez de cliquer directement sur les boutons
+
+Widget disparaît :
+- Cliquez sur l'icône Viple dans la barre système
+- Ou attendez le prochain redémarrage
+
+Bordure manquante :
+- Normal sur certains thèmes Windows
+- La fonctionnalité reste identique
+
+DÉSINSTALLATION :
+python setup_viple_v3.py --uninstall
+
+SUPPORT :
+Pour toute assistance, visitez : https://aidenum.viplegroup.com
+
+Version 3.0 - Créé par Viple SAS
+Interface sans barre de titre et déplacement par glisser-déposer
+Date: 2026-06-26

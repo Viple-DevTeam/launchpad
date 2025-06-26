@@ -1,0 +1,116 @@
+Créé par Viple SAS
+
+=== GUIDE D'UTILISATION - VIPLE LAUNCHPAD V4 ===
+Version transparente avec fond d'image de paysage
+
+NOUVEAUTÉS V4 :
+🚫 SUPPRESSION du bouton de fermeture (interface ultra-épurée)
+🖼️ Fond d'image de paysage automatique (montagnes, ciel, nuages)
+✨ Transparence à 85% (réglable via menu système)
+🎨 Boutons colorés par fonction (bleu, vert, violet)
+🔧 Menu système enrichi avec nouvelles options
+🌄 Images de fond générées automatiquement
+
+DESCRIPTION :
+Widget LaunchPad Viple avec interface transparente et fond d'image pour une intégration parfaite au bureau Windows.
+
+CONTENU V4 :
+1. viple_launchpad_v4.py - Widget transparent avec fond d'image
+2. create_background_image.py - Générateur d'images de paysage
+3. create_viple_icon.py - Générateur d'icône Viple
+4. setup_viple_v4.py - Installation automatique V4
+
+INSTALLATION :
+python setup_viple_v4.py
+
+FONCTIONNALITÉS V4 :
+
+INTERFACE TRANSPARENTE :
+- Transparence à 85% par défaut
+- Fond d'image de paysage (montagnes, ciel, prairie)
+- Aucun bouton de fermeture (épuré au maximum)
+- Assombrissement du fond pour lisibilité du texte
+
+FOND D'IMAGE AUTOMATIQUE :
+🏔️ Paysage de montagnes avec dégradé de ciel
+☁️ Nuages blancs réalistes
+🌱 Prairie verte au premier plan
+🎨 Effet de lissage pour qualité professionnelle
+
+CONTRÔLES V4 :
+🖱️ Glisser-déposer : Cliquez n'importe où et déplacez
+🔧 Icône système : Toutes les actions et paramètres
+⏰ Auto-masquage : Disparaît après 3 secondes sans focus
+
+BOUTONS COLORÉS :
+🆘 Aide (Bleu #2E86C1) : https://aidenum.viplegroup.com
+🖥️ Kiosk (Vert #27AE60) : C:\viplestart\lkiosk.exe
+⚙️ Manager (Violet #8E44AD) : C:\viplestart\lmanager.exe
+
+MENU SYSTÈME ENRICHI :
+🔧 Afficher/Masquer LaunchPad (action par défaut)
+🆘 Obtenir de l'aide
+🖥️ Lancer le Kiosk
+⚙️ Lancer le Manager
+🎨 Changer transparence (60%, 75%, 85%, 95%, 100%)
+📍 Repositionner (retour en haut à droite)
+❌ Quitter complètement
+
+NIVEAUX DE TRANSPARENCE :
+- 60% : Très transparent, fond très visible
+- 75% : Transparent, bon équilibre
+- 85% : Défaut, léger effet transparent
+- 95% : Presque opaque
+- 100% : Complètement opaque
+
+PERSONNALISATION :
+
+Changer l'image de fond :
+1. Modifiez create_background_image.py
+2. Exécutez : python create_background_image.py
+3. Relancez le widget
+
+Images de fond disponibles :
+- viple_background.png : Paysage de montagnes
+- viple_background_abstract.png : Fond abstrait géométrique
+
+UTILISATION OPTIMALE :
+1. Le widget apparaît transparent en haut à droite
+2. Déplacez-le où vous voulez par glisser-déposer
+3. Utilisez l'icône système pour toutes les actions
+4. Changez la transparence selon vos préférences
+5. Repositionnez automatiquement si nécessaire
+
+AVANTAGES V4 :
+✅ Interface la plus épurée possible (pas de boutons système)
+✅ Intégration parfaite au bureau Windows
+✅ Transparence réglable selon les préférences
+✅ Fond d'image professionnel et apaisant
+✅ Contrôle total via icône système
+✅ Très discret mais accessible
+
+DÉPANNAGE V4 :
+
+Widget trop transparent :
+- Clic droit sur icône système → "Changer transparence"
+- Augmentez jusqu'à 95% ou 100%
+
+Fond d'image non visible :
+- Vérifiez que viple_background.png existe
+- Relancez : python create_background_image.py
+
+Widget invisible :
+- Clic sur icône Viple dans barre système
+- Ou menu → "Repositionner"
+
+Performance :
+- L'image de fond est optimisée et mise en cache
+- Aucun impact notable sur les performances
+
+SUPPORT :
+Pour toute assistance : https://aidenum.viplegroup.com
+
+Version 4.0 - Créé par Viple SAS
+Interface transparente avec fond d'image de paysage
+Date: 2025-06-26
+Utilisateur: viplegroup

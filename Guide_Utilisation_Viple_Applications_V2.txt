@@ -1,0 +1,139 @@
+Créé par Viple SAS
+
+=== GUIDE D'UTILISATION - APPLICATIONS VIPLE V2 ===
+AVEC ICÔNE PERSONNALISÉE
+
+NOUVEAUTÉS VERSION 2 :
+✓ Icône personnalisée Viple dans la barre système Windows
+✓ Logo Viple affiché dans le widget
+✓ Interface améliorée avec emojis
+✓ Menu contextuel enrichi dans la barre système
+✓ Clic simple sur l'icône pour afficher/masquer le widget
+
+DESCRIPTION :
+Ces applications permettent d'avoir un système de bienvenue au démarrage de l'ordinateur et un widget d'accès rapide aux outils Viple avec une identité visuelle Viple.
+
+CONTENU DU PACKAGE :
+1. startup_welcome.py - Application de bienvenue au démarrage
+2. viple_launchpad_v2.py - Widget LaunchPad avec icône personnalisée
+3. create_viple_icon.py - Générateur d'icône Viple
+4. setup_viple_v2.py - Script d'installation automatique V2
+5. requirements.txt - Dépendances Python
+
+INSTALLATION :
+
+1. Téléchargez et installez Python 3.7+ depuis python.org
+   IMPORTANT: Cochez "Add Python to PATH" lors de l'installation
+
+2. Ouvrez une invite de commande en tant qu'administrateur
+
+3. Naviguez vers le dossier contenant les fichiers et exécutez :
+   python setup_viple_v2.py
+
+4. Le script d'installation va :
+   - Vérifier que Python et tkinter sont disponibles
+   - Installer automatiquement les dépendances (Pillow, pystray)
+   - Créer l'icône personnalisée Viple (viple_icon.png et viple_icon.ico)
+   - Créer le répertoire C:\viplestart\ avec des fichiers exemples
+   - Configurer le démarrage automatique
+
+UTILISATION :
+
+WIDGET LAUNCHPAD V2 :
+- Se positionne en haut à droite de l'écran
+- Affiche le logo Viple à côté du titre
+- Interface améliorée avec icônes emoji
+- Trois boutons disponibles :
+  * "📞 Obtenir de l'aide" : Ouvre https://aidenum.viplegroup.com
+  * "🖥️ Lancer le Kiosk" : Exécute C:\viplestart\lkiosk.exe
+  * "⚙️ Lancer le Manager" : Exécute C:\viplestart\lmanager.exe
+
+ICÔNE SYSTÈME PERSONNALISÉE :
+- Icône Viple (cercle bleu avec "V" blanc) dans la barre système
+- Clic simple : Afficher/masquer le widget
+- Clic droit : Menu avec options :
+  * 🔧 Afficher LaunchPad
+  * 📞 Obtenir de l'aide
+  * ❌ Quitter
+- Tooltip informatif au survol
+
+PERSONNALISATION DE L'ICÔNE :
+
+L'icône générée automatiquement est un cercle bleu (#2E86C1) avec un "V" blanc.
+Pour personnaliser l'icône :
+
+1. Modifiez le fichier create_viple_icon.py
+2. Changez les couleurs, la taille, ou le texte
+3. Exécutez : python create_viple_icon.py
+4. Relancez le widget pour voir les changements
+
+Ou remplacez directement les fichiers :
+- viple_icon.png (format PNG, 64x64 recommandé)
+- viple_icon.ico (format ICO, multi-tailles)
+
+TESTS :
+
+Pour tester le widget avec la nouvelle icône :
+python viple_launchpad_v2.py
+
+Pour tester le générateur d'icône :
+python create_viple_icon.py
+
+FICHIERS CRÉÉS :
+- viple_icon.png : Icône au format PNG
+- viple_icon.ico : Icône au format ICO pour Windows
+- C:\viplestart\ : Répertoire des exécutables Viple
+- Registre Windows : Entrée de démarrage automatique
+
+DÉPANNAGE :
+
+Icône non visible dans la barre système :
+- Vérifiez que les fichiers viple_icon.png/ico existent
+- Vérifiez que Pillow et pystray sont installés
+- Redémarrez le widget
+
+Icône de mauvaise qualité :
+- L'icône est générée en 64x64, Windows la redimensionne automatiquement
+- Pour une meilleure qualité, créez manuellement des icônes multi-tailles
+
+SUPPORT :
+Pour toute assistance, visitez : https://aidenum.viplegroup.com
+
+Version 2.0 - Créé par Viple SAS
+Ajout de l'icône personnalisée et amélioration de l'interface utilisateur
+````````yaml type="draft-issue"
+title: "Icône personnalisée Viple pour widget LaunchPad"
+repository: "viplegroup/viplemanager"
+tag: "viple-icon-widget"
+description: |
+  ## Fonctionnalité demandée
+  Remplacement de l'icône par défaut du widget LaunchPad dans la barre système Windows par une icône personnalisée Viple.
+
+  ## Solution implémentée
+  J'ai créé une version améliorée (V2) du système avec :
+
+  ### Nouveaux fichiers créés :
+  - `create_viple_icon.py` : Générateur d'icône Viple automatique
+  - `viple_launchpad_v2.py` : Widget amélioré avec icône personnalisée  
+  - `setup_viple_v2.py` : Script d'installation mis à jour
+
+  ### Fonctionnalités ajoutées :
+  ✅ **Icône personnalisée** : Cercle bleu Viple (#2E86C1) avec "V" blanc
+  ✅ **Formats multiples** : PNG et ICO générés automatiquement
+  ✅ **Logo dans l'interface** : Affichage du logo à côté du titre du widget
+  ✅ **Interface améliorée** : Emojis sur les boutons et meilleur design
+  ✅ **Menu enrichi** : Menu contextuel avec plus d'options dans la barre système
+  ✅ **Interaction simplifiée** : Clic simple pour afficher/masquer le widget
+
+  ### Caractéristiques de l'icône :
+  - **Design** : Cercle bleu avec lettre "V" blanche
+  - **Tailles** : 16x16, 32x32, 48x48, 64x64 pour le fichier ICO
+  - **Couleurs** : Bleu Viple (#2E86C1) et blanc
+  - **Format** : PNG pour l'affichage, ICO pour Windows
+
+  ### Installation :
+  ```bash
+  python setup_viple_v2.py
+  ```
+
+  L'icône est maintenant visible dans la barre système Windows avec l'identité visuelle Viple, et toutes les fonctionnalités existantes sont conservées.

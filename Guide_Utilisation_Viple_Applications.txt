@@ -1,0 +1,90 @@
+Créé par Viple SAS
+
+=== GUIDE D'UTILISATION - APPLICATIONS VIPLE ===
+
+DESCRIPTION :
+Ces applications permettent d'avoir un système de bienvenue au démarrage de l'ordinateur et un widget d'accès rapide aux outils Viple.
+
+CONTENU DU PACKAGE :
+1. startup_welcome.py - Application de bienvenue au démarrage
+2. viple_launchpad.py - Widget LaunchPad permanent
+3. setup_viple.py - Script d'installation automatique
+4. requirements.txt - Dépendances Python
+
+INSTALLATION RAPIDE :
+
+1. Téléchargez et installez Python 3.7+ depuis python.org
+   IMPORTANT: Cochez "Add Python to PATH" lors de l'installation
+
+2. Ouvrez une invite de commande en tant qu'administrateur
+
+3. Naviguez vers le dossier contenant les fichiers et exécutez :
+   python setup_viple.py
+
+4. Le script d'installation va :
+   - Vérifier que Python et tkinter sont disponibles
+   - Installer automatiquement les dépendances (Pillow, pystray)
+   - Créer le répertoire C:\viplestart\ avec des fichiers exemples
+   - Configurer le démarrage automatique
+
+INSTALLATION MANUELLE (si l'installation automatique échoue) :
+
+1. Installer les dépendances :
+   pip install Pillow>=8.0.0 pystray>=0.19.0
+
+2. Créer le répertoire C:\viplestart\
+
+3. Placer vos exécutables lkiosk.exe et lmanager.exe dans C:\viplestart\
+
+4. Pour le démarrage automatique :
+   python setup_viple.py
+
+UTILISATION :
+
+APPLICATION DE BIENVENUE :
+- Se lance automatiquement au démarrage de Windows
+- Affiche "Bienvenue chez Viple" pendant 3 secondes
+- Puis affiche un message d'aide pendant 5 secondes
+- Lance automatiquement le widget LaunchPad
+
+WIDGET LAUNCHPAD :
+- Se positionne en haut à droite de l'écran
+- Reste visible sur le bureau
+- Trois boutons disponibles :
+  * "Obtenir de l'aide" : Ouvre https://aidenum.viplegroup.com
+  * "Lancer le Kiosk" : Exécute C:\viplestart\lkiosk.exe
+  * "Lancer le Manager" : Exécute C:\viplestart\lmanager.exe
+- Icône dans la barre système pour réafficher le widget (si PIL/pystray disponibles)
+- Se cache automatiquement quand on clique ailleurs après 1 seconde
+
+DÉSINSTALLATION :
+
+Pour désinstaller le démarrage automatique :
+python setup_viple.py --uninstall
+
+DÉPANNAGE :
+
+Erreur "tkinter not found" :
+- Réinstallez Python en vous assurant que tkinter est inclus
+- Sur certaines distributions Linux : sudo apt-get install python3-tk
+
+Erreur "Pillow" ou "pystray" :
+- Exécutez : pip install --upgrade Pillow pystray
+- Si ça ne fonctionne pas, le widget fonctionnera en mode simplifié
+
+Les exécutables ne se lancent pas :
+- Vérifiez que lkiosk.exe et lmanager.exe existent dans C:\viplestart\
+- Remplacez les fichiers exemples par les vrais exécutables
+
+Permissions insuffisantes :
+- Exécutez l'invite de commande en tant qu'administrateur
+
+FICHIERS CRÉÉS :
+- C:\viplestart\ : Répertoire des exécutables Viple
+- Registre Windows : Entrée de démarrage automatique dans HKEY_CURRENT_USER
+
+SUPPORT :
+Pour toute assistance, visitez : https://aidenum.viplegroup.com
+
+Version 1.1 - Créé par Viple SAS
+Correction de l'erreur tkinter et amélioration de la robustesse
